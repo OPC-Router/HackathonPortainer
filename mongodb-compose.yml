@@ -2,6 +2,7 @@ version: '3'
 services:
   mongodb:
     image: mongodb/mongodb-community-server:4.4.8-ubuntu2004
+    command: ["--replSet", "localReplicaSet"]
     environment:
       - MONGO_INITDB_ROOT_USERNAME=
       - MONGO_INITDB_ROOT_PASSWORD=
