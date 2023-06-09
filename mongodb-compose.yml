@@ -8,10 +8,10 @@ services:
       - MONGO_INITDB_ROOT_PASSWORD=
       - PORT=27017
     volumes:
-        - mongodb-data:/data/db
+        - mongodb-data-${PORT}:/data/db
     ports:
      - "${PORT}:27017"
 
 volumes:
-    mongodb-data:
+    mongodb-data-${PORT}:
         external: false
