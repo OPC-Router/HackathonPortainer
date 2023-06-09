@@ -6,10 +6,11 @@ services:
     environment:
       - MONGO_INITDB_ROOT_USERNAME=
       - MONGO_INITDB_ROOT_PASSWORD=
+      - PORT=27017
     volumes:
         - mongodb-data:/data/db
     ports:
-     - "27018:27017"
+     - "${PORT}:27017"
 
 volumes:
     mongodb-data:
