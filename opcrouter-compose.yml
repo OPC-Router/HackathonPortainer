@@ -2,7 +2,7 @@ version: '3.3'
 services:
     service:
         environment:
-            - 'OR_DATABASE_CONNECTION_STRING=mongodb://192.168.2.17:27018'
+            - 'OR_DATABASE_CONNECTION_STRING=mongodb://192.168.2.17:27017'
             - 'OR_I_ACCEPT_EULA=true'
         volumes:
             - 'opc-router-OPC-Router-cert:/root/.dotnet/corefx/cryptography/x509stores/'
