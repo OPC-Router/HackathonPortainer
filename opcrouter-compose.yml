@@ -6,3 +6,6 @@ services:
         volumes:
             - 'opc-router-OPC-Router-cert:/root/.dotnet/corefx/cryptography/x509stores/'
         image: 'opcrouter/service:4.28'
+volumes:
+    opc-router-OPC-Router-cert:
+        external: false
