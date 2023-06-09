@@ -6,7 +6,7 @@ services:
             - 'OR_I_ACCEPT_EULA=true'
         volumes:
             - 'opc-router-OPC-Router-cert:/root/.dotnet/corefx/cryptography/x509stores/'
-        image: 'opcrouter/service:4.28'
+        image: 'opcrouter/service:4.28-RC'
         command: ["import", "--source", "inrayHackathon.rpe", "--allow-clear-config", "--start-service"]
 volumes:
     opc-router-OPC-Router-cert:
